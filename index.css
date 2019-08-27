@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin-top: 250px;
+    
+}
+
+header#header_principal{
+    background-color:black;
+}
+
+footer{
+    background-color:black;
+}
+
+.contenedor_2{
+    background-color: yellow;
+}
+    p{
+        color: blueviolet;
+    }
+
+
+    p{
+        font-size: 20px;
+        font-family: serif;
+        color: black;
+    }
+    
+    #hache_uno{
+        color:white;
+        font-size: 50px;
+
+    }
+    #contenedor{
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        border-color: black;
+        background-color: white !important;
+        border-style: solid;
+        background-color:#FFFFFF;
+    }
+
+#lista{
+    display:inline; 
+}
+#lista li{
+    display: inline;
+}
+
+#lista li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    list-style-type: none;
+    border: 30px;
+}
+#lista li a:hover{
+    background-color: #fff;
+    padding-bottom: 12px;
+    color: black;
+}
+
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+
+.header_div_2{
+    display: inline-block;
+
+}
+
+nav{
+    float: right;
+    margin-top: 150px;
+}
+
+#header_principal{
+    top:0;
+    right: 0;
+    position: fixed;
+    background-color:black;
+    height: 210px;
+    width: 100%
+}
+
+#div_lista{
+    float: right;
+}
+
+article{
+    border-color: black;
+    border-style: solid; 
+    width: 600px;
+}
+
+/* TAMBIEN SE PUEDEN CONBINAR ETIQUETAS, HERENCIA, ID'S ETC . . . . PARA APLICAR ESTILOS */
+
+footer > p, address, #a_footer{
+    color: #FFFFFF;
+}
