@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /* VARIABLES      
+        */
+        /* TEXTO */       
+        var nombre;
+        nombre = 'jeremias';
+        document.write(nombre);
+        document.write('<br>');
+        /* INTEGER */
+        var edad = 34.0;
+        document.write(edad);
+        console.log(typeof(nombre));
+        console.log(typeof(edad));
+        /* varias variables en la misma linea */
+        var lunes, martes, miercoles;
+        console.log(typeof(lunes));
+        lunes=1;
+        console.log(lunes);
+        console.log("lunes como entero", typeof(lunes));
+
+        lunes="lo peor del mundo .....";
+        console.log(lunes);
+        console.log("lunes como cadena", typeof(lunes));
+
+        /* var entrada=prompt('buenas, todo bien ????'); 
+        console.log(entrada);*/
+        /* tipo de variable string */
+/*         var num1=prompt('ingrese un numero por favor');
+        var num2=prompt('ingrese un numero por favor');
+        console.log('primer tipo', typeof(num1));
+        console.log('primer tipo', typeof(num2)); */
+
+/*         var num1=parseInt(prompt('ingrese un numero por favor'));
+        var num2=parseInt(prompt('ingrese un numero por favor'));
+        console.log('segundo tipo', typeof(num1));
+        console.log('segundo tipo', typeof(num2));
+        alert(num1+num2); */
+
+        /* condicional is else  */
+
+/*         if(num1>num2){
+            alert('El primer numero es mayor');
+        }else{
+            alert("El segundo numero es mayor");
+        } */
+        var dia = prompt("ingrese dia de la semana");
+
+        switch(dia){
+            case 'lunes': alert('es el primer dia de la semana');
+                break;
+            case 'martes': alert('es el segundo dia de la semana');
+                break;
+            case 'miercoles': alert('es el tercero dia de la semana');
+                break;
+            case 'jueves': alert('es el cuarto dia de la semana');
+                break;
+            case 'viernes': alert('es el quinto dia de la semana');
+                break;
+            case 'sabado': alert('es el sexto dia de la semana');
+                break;
+            case 'domingo': alert('es el septimo dia de la semana');
+                default:alert('poné un dia capooooo');
+        }
+    
+
+        
+
+    </script>
+    
+</body>
+</html>
