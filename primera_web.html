@@ -53,23 +53,47 @@
         }else{
             alert("El segundo numero es mayor");
         } */
+/*         var dia = prompt("ingrese dia de la semana");
+
+ */
         var dia = prompt("ingrese dia de la semana");
 
-        switch(dia){
-            case 'lunes': alert('es el primer dia de la semana');
-                break;
-            case 'martes': alert('es el segundo dia de la semana');
-                break;
-            case 'miercoles': alert('es el tercero dia de la semana');
-                break;
-            case 'jueves': alert('es el cuarto dia de la semana');
-                break;
-            case 'viernes': alert('es el quinto dia de la semana');
-                break;
-            case 'sabado': alert('es el sexto dia de la semana');
-                break;
-            case 'domingo': alert('es el septimo dia de la semana');
-                default:alert('poné un dia capooooo');
+        var verificador = true;//esta variable funciona como condicion global
+        //la seteamos en truenpara que siempre se ejecute
+        //esto se conoce como "while true"
+        while(verificador){            
+            switch(dia){
+                case 'lunes': 
+                    alert('es el primer dia de la semana');
+                    verificador=false;
+                    break;
+                case 'martes': 
+                    alert('es el segundo dia de la semana');
+                    verificador=false;
+                    break;
+                case 'miercoles': 
+                    alert('es el tercero dia de la semana');
+                    verificador=false;
+                    break;
+                case 'jueves': 
+                    alert('es el cuarto dia de la semana');
+                    verificador=false;
+                    break;
+                case 'viernes': 
+                    alert('es el quinto dia de la semana');
+                    verificador=false;
+                    break;
+                case 'sabado': 
+                    alert('es el sexto dia de la semana');
+                    verificador=false;
+                    break;
+                case 'domingo': 
+                    alert('es el septimo dia de la semana');
+                    verificador=false;
+                    break;
+                default:
+                    dia=prompt('poné un dia capooooo');
+            }
         }
     
 
