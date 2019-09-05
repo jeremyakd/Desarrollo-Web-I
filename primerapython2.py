@@ -5,7 +5,7 @@ print('la suma es: ', num1+num2) """
 #la condicion el if va sin parentesis
 condition=True
 #ojo el True de Python es con mayuscula
-dia=raw_input('Ingrese dia de la semana por favor: ')
+dia=input('Ingrese dia de la semana por favor: ')
 while condition:
     if dia=='lunes':
         print('in english is Monday')
