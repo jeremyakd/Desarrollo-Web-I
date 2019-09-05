@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase JavaScript</title>
+    <style>
+    html
+    {
+        font-size: 62.5%;
+    }
+    body
+    {
+        margin: 0 auto;
+        width: 50rem;
+    }
+    p
+    {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Clase JavaScript</h1> <hr>
+    <p> <input type="text" name="numero1" style="text-align: right;" size="6" onfocus="calcular()" > <br>
+    <span style="text-align: left;display:inline-block; width:80px" onfocus="calcular()" >+</span>  <br> <input type="text" name="numero2" style="text-align: right;"  size="6"> <br>    
+    –––––––––––––––––– <br>
+    
+    <input type="text" name="res" onfocus="calcular() "  style="text-align: right;"  size="6">
+   </p>
+    <script>
+        num1 = document.getElementsByName("numero1")[0].value;
+            console.log('num1');
+        function calcular() {
+            num1 = document.getElementsByName("numero1")[0].value;
+            // num2 = document.getElementsByName("numero2")[0].value;
+            // if (num1 !== null && num2 !== null ) {
+            //     var resultado = parseInt(num1) + parseInt(num2);
+            //     document.getElementsByName("res")[0].value = resultado;
+            }
+        
+    </script>
+</body>
+</html>
