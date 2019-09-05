@@ -17,6 +17,7 @@ branch - rama del repo master
     git pull ------ Nos trae los cambios del repo
     git remote -v ------ Nos dice a donde apunta nuestro repo
 
+    git merge master --- COMANDO UTILIZADO PARA ACTUALIZAR LAS ACTUALIZACIONES DEL MASTER AL BRANCH
     git status ------ Estado del arbol de trabajo
     git branch ------ Nos dice en que branch estamos
     
