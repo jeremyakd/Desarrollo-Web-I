@@ -10,7 +10,7 @@ for i in range(1,11):
 
 print("**********************************************")
 
-for i in range(2,11,2):
+for i in range(3,12,2):
     print("El numero ",i, " es par.")
     contador+=1
 print(u"el ultimo for iteró", contador, "veces.")
