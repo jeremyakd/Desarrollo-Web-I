@@ -9,13 +9,13 @@
     body {
         text-align:center;
         margin-top:50px;
-        background-color:grey;
+        background-color: darkgrey;
     }
     button {
         margin:0 auto;
         width:300px;
         height: 300px;
-        background-color:blue;
+        background-color:darkblue;
         color:white;
         font-weight: 800;
         font-size:2rem;
@@ -23,7 +23,10 @@
         outline: none;
     }
     button:hover {
-        background-color:darkblue;
+        background-color:blue;
+    }
+    body:hover {
+        background-color:grey;
     }
     
 </style>
@@ -31,7 +34,7 @@
 
 <body>
 
-<button onclick=elMenor()>Cual es el menor de los 3? Click!</button>
+<button onclick=elMenor()>Cual es el menor de los 3? <br>Click!</button>
 
 
 <script>
@@ -40,44 +43,33 @@ function elMenor() {
     var num2 = parseInt(prompt('Ingrese valor 2'));
     var num3 = parseInt(prompt('Ingrese valor 3'));
 
-    if (num1<num2 && num1<num3) 
-    {
-        if (num1 == num2) 
-        {
-            alert(num1 +' y ' + num2 + ' son iguales');
-        }
+    if (num1 == num2 || num1 == num3 || num2 == num3) {
+        if (num1 == num2) {
+            alert('num1 y num2 son iguales');
+        } 
         else if (num1 == num3)
         {
-            alert(num1 + ' y ' + num3 + ' son iguales');
-        } 
-        else 
+            alert('num1 y num3 son iguales');
+        }
+        else
         {
-        alert(num1 + ' es el menor');
+            alert('num2 y num3 son iguales');
         }
     } 
-    
-    else if (num2 == num3) {
-        if (num2 < num3) 
-        {
-            alert(num2 + ' es el menor');
-        }
-        else 
-        {
-            alert(num2 + ' y ' + num3 + ' son iguales');
-        }        
+    else if (num1 < num2 && num1 < num3)
+    {
+        alert('num1 es el menor');
+    }
+    else if (num2<num3)
+    {
+        alert('num2 es el menor');
     } 
-
-    else if (num1 == num3)
-    {
-        alert(num1 + ' y ' + num3 + ' son iguales');
+    else {
+        alert('num3 es el menor');
     }
-
-    else
-    {
-        alert(num3 + ' es el menor');
-    }
-
 }    
+
+  
 </script>    
 </body>
 </html>
