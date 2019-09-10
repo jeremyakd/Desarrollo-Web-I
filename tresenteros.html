@@ -10,9 +10,11 @@
         text-align:center;
         margin-top:50px;
         background-color: darkgrey;
+        position:relative;
     }
     button {
-        margin:0 auto;
+        position:relative;
+        display:inline-block;
         width:300px;
         height: 300px;
         background-color:darkblue;
@@ -24,9 +26,6 @@
     }
     button:hover {
         background-color:blue;
-    }
-    body:hover {
-        background-color:grey;
     }
     
 </style>
@@ -44,28 +43,20 @@ function elMenor() {
     var num3 = parseInt(prompt('Ingrese valor 3'));
 
     if (num1 == num2 || num1 == num3 || num2 == num3) {
-        if (num1 == num2) {
+        if (num1 == num2)
             alert('num1 y num2 son iguales');
-        } 
-        else if (num1 == num3) {
-            alert(num1 + ' y ' + num3 + ' son iguales');
-        }
-        else {
-            alert(num2 + ' y ' + num3 + ' son iguales');
-        }
+        else if (num1 == num3)
+            alert('num1 y num3 son iguales');
+        else
+            alert('num2 y num3 son iguales');
     } 
-    else if (num1 < num2 && num1 < num3) {
-        alert(num1 + es + ' el menor');
-    }
-    else if (num2<num3) {
+    else if (num1 < num2 && num1 < num3)
+        alert(num1 + ' es  el menor');
+    else if (num2<num3)
         alert(num2 + ' es el menor');
-    } 
-    else {
+    else
         alert(num3 + ' es el menor');
-    }
-}    
-
-  
+}
 </script>    
 </body>
 </html>
