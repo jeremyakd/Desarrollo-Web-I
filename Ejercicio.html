@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var atributos = new Array('Nombre: ','Apellido: ','Edad: ','Equipo de futbol: ','Lenguaje favorito: ');
+    var valores = new Array(atributos.length);
+    var Persona = instanciaPersona(atributos, valores);    
+    muestra(atributos,Persona);
+    
+    function instanciaPersona(valores, user){
+        for (i = 0; i < atributos.length; i++) {
+            var dato = promptDatos(atributos[i]);
+            user[i]=dato;
+        }
+        return user;
+    }
+    
+    function promptDatos(d){
+        var cadaValor = prompt("Por favor ingrese su " + d);
+        return cadaValor;
+    }
+    
+    function muestra(param1,valores){
+        for (let i = 0; i < param1.length; i++) {
+            document.write(param1[i] + valores[i]);
+            document.write('<br>');            
+        }
+    }
+</script>
+</body>
+</html>

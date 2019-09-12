@@ -1,0 +1,38 @@
+var num1 = parseInt(prompt("Ingrese primer numero"));
+        var num2 = parseInt(prompt("Ingrese segundo numero"));
+        var num3 = parseInt(prompt("Ingrese tercer numero"));
+        mostrarOrden(num1,num2,num3);
+        function mostrarOrden(n1,n2,n3){
+            if(n1==n2){ 
+                if(n2==n3)
+                    document.write("Los numeros son iguales");
+                else if(n2>n3)
+                    document.write('Los dos primeros numeros son iguales y el orden es: ',n1,' , ',n2,' , ',n3);
+                else 
+                    document.write('Los dos primeros numeros son iguales y el orden es: ',n3,' , ',n1,' , ',n2);
+            } 
+            else if(n1==n3){
+                if(n1>n2)
+                    document.write('El primer y tercer numero son iguales y el orden es: ',n1,' , ',n3,' , ',n2);
+                else
+                    document.write('El primer y tercer numero son iguales y el orden es: ',n2,' , ',n1,' , ',n3);
+            }
+            else if(n2==n3){
+                if(n2>n1)
+                    document.write('El segundo y tercer numero son iguales y el orden es: ',n2,' , ',n3,' , ',n1);
+                else
+                    document.write('El primer y tercer numero son iguales y el orden es: ',n1,' , ',n2,' , ',n3);
+            }
+            else if((n1>n2)&&(n2>n3))
+                document.write('El orden es: ',n1,' , ',n2,' , ',n3);
+            else if((n1>n3)&&(n3>n2))
+                document.write('El orden es: ',n1,' , ',n3,' , ',n2);
+            else if((n2>n1)&&(n1>n3))
+                document.write('El orden es: ',n2,' , ',n1,' , ',n3);
+            else if((n2>n3)&&(n3>n1))
+                document.write('El orden es: ',n2,' , ',n3,' , ',n1);
+            else if((n3>n1)&&(n1>n2))
+                document.write('El orden es: ',n3,' , ',n1,' , ',n2);
+            else if((n3>n2)&&(n2>n1))
+                document.write('El orden es: ',n3,' , ',n2,' , ',n1);  
+        }
