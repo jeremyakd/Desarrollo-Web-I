@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    /* crear una funcion que pida el sueldo de 5 empleados y nos devuelva lasuma  del promedio. */
+    
+    var empleados = new Array(5);
+
+    cargarSueldo(empleados);
+    calculaTodo(empleados);
+
+    function cargarSueldo(empleados){
+        for( i=0;i< empleados.length;i++){
+            var s = parseInt(prompt(" Ingrese sueldo por favor: "))
+            empleados[i]= s;
+        }   
+    }
+    
+    function calculaTodo(empleados){
+        let total = 0;
+        document.write("detalles de los sueldos: ");
+        document.write("<br>");
+        for (i = 0;i<empleados.length;i++){
+            document.write((i+1)+"Empleados"+ empleados[i]);
+            document.write("<br>")
+            total+=empleados[i];
+        }
+        alert("La suma de todos los sueldos es de  "+total+" $.")
+    }
+
+
+
+
+    </script>
+</body>
+</html>
