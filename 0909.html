@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Elaborar una función a la cual enviemos 3 enteros y los ordene. */
+
+    var valor1, valor2, valor3;
+
+    valor1=parseInt(prompt("Ingrese un valor"));
+    valor2=parseInt(prompt("Ingrese un valor"));
+    valor3=parseInt(prompt("Ingrese un valor"));
+
+    ordenar(valor1, valor2, valor3);
+
+    function ordenar (v1,v2,v3){
+        if (v1<v2 && v1<v3){
+            document.write(v1)
+            if (v2<v3){
+                document.write(v2, v3)
+            }
+            else {
+            document.write (v3, v2)
+        }
+        else {
+            if (v2<v3){
+                document.write(v1, v3)
+            }
+            else {
+                document.write(v2)
+
+            }        
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
