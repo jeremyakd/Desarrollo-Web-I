@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+
+
+
+    //CREAR 2 ARRAYS 1 MESES Y OTRO DIAS
+    // PEDIR POR FUNCION INDICE Y RETORNAR MES Y CANT DIAS
+    
+    var meses = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio','Junlo', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+    var dias = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+
+    mostrarDias(meses,dias);
+    gracias();
+    document.write(num);
+
+    function mostrarDias(meses, dias){
+        let num=parseInt(prompt("Ingrese numero de mes por favor. "));
+        alert("El indice ingresado corresponde a "+meses[num-1]+" y tiene "+dias[num-1]+" dias.");
+    }
+
+    function gracias(){
+        document.write("Gracias por usar nuestro sofisticado software");
+    }
+        
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+    // crear una funcion que pida el sueldo de 5 emplados y nos devuleva la suma el promedio 
+    
+    var empleados = new Array(5);
+
+    cargarSueldos(empleados);
+    calculaTodo(empleados);
+
+    function cargarSueldos(empleados){
+        for ( i = 0; i < empleados.length; i++) {
+            var s = parseInt(prompt("Ingrese sueldo por favor"));
+            empleados[i]=s;
+        }
+    }
+    
+    function calculaTodo(empleados){
+        let total = 0;
+        document.write("Detalle de sueldos: ");//adorno
+        document.write("<br>");//adorno
+        for (i = 0; i < empleados.length; i++) {
+            document.write((i+1) + "- Empleado: " + empleados[i]);//adorno
+            document.write("<br>");//adorno
+            total+=empleados[i];
+        }
+        alert("La suma de todos los sueldos es de "+total+" $.");
+    }
+
+
+
+    </script>
+
+</body>
+</html>
