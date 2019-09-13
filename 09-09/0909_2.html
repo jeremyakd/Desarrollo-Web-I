@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+    // realizar una funcion que reciba 3 parametros
+    // y los muestre ordenado de menor a mayor
+
+
+/*     var valor1, valor2, valor3;
+    valor1=parseInt(prompt('Ingrese numero por favor'));
+    valor2=parseInt(prompt('Ingrese numero por favor'));
+    valor3=parseInt(prompt('Ingrese numero por favor'));
+    ordenar(valor1, valor2, valor3);
+        
+    function ordenar(v1, v2, v3){
+        if (v1<v2 && v1<v3){
+            document.write(v1+ ' ');
+            if (v2<v3){
+                document.write(v2+ ' '+v3);
+            }else{
+                document.write(v3+ ' '+v2);
+            }
+            
+        }else{
+            if(v2<v3){
+                document.write(v1+ ' '+v3);
+            }
+        }
+
+    } */
+
+    var num1 = parseInt(prompt("Ingrese primer numero"));
+    var num2 = parseInt(prompt("Ingrese segundo numero"));
+    var num3 = parseInt(prompt("Ingrese tercer numero"));
+
+    mostrarOrden(num1,num2,num3);
+    function mostrarOrden(n1,n2,n3){
+        if(n1==n2){ 
+            if(n2==n3)
+                document.write("Los numeros son iguales");
+            else if(n2>n3)
+                document.write('Los dos primeros numeros son iguales y el orden es: ',n1,' , ',n2,' , ',n3);
+            else 
+                document.write('Los dos primeros numeros son iguales y el orden es: ',n3,' , ',n1,' , ',n2);
+        }
+        
+        
+        else if(n1==n3){
+            if(n1>n2)
+                document.write('El primer y tercer numero son iguales y el orden es: ',n1,' , ',n3,' , ',n2);
+            else
+                document.write('El primer y tercer numero son iguales y el orden es: ',n2,' , ',n1,' , ',n3);
+        }
+
+
+        else if(n2==n3){
+            if(n2>n1)
+                document.write('El segundo y tercer numero son iguales y el orden es: ',n2,' , ',n3,' , ',n1);
+            else
+                document.write('El primer y tercer numero son iguales y el orden es: ',n1,' , ',n2,' , ',n3);
+        }
+
+
+        else if( (n1>n2) && (n2>n3) )
+            document.write('El orden es: ',n1,' , ',n2,' , ',n3);
+        else if((n1>n3)&&(n3>n2))
+            document.write('El orden es: ',n1,' , ',n3,' , ',n2);
+        else if((n2>n1)&&(n1>n3))
+            document.write('El orden es: ',n2,' , ',n1,' , ',n3);
+        else if((n2>n3)&&(n3>n1))
+            document.write('El orden es: ',n2,' , ',n3,' , ',n1);
+        else if((n3>n1)&&(n1>n2))
+            document.write('El orden es: ',n3,' , ',n1,' , ',n2);
+        else if((n3>n2)&&(n2>n1))
+            document.write('El orden es: ',n3,' , ',n2,' , ',n1);  
+    }
+
+
+    </script>
+
+
+</body>
+</html>
