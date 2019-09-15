@@ -1,0 +1,131 @@
+    body{
+        background-color:white;
+        
+    }
+    header#header_principal{
+        background-color: rgb(2, 0, 3);
+    }
+footer{
+    background-color: black;
+    
+}
+
+    .contenedor_2{
+        background-color: yellow;
+    }
+    p{
+        color: black;
+    }
+
+
+    p #parrafo{    
+         /* se puede poner asi tambien con la p adelante*/  
+        font-size: 20px;
+        font-family: serif;
+        color:Black;
+    }
+    
+    #hache_uno{
+        color:white;
+        font-size:50px;
+       
+        
+    
+
+    }
+    #contenedor{
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        border-color: black;
+        background-color: white !important;
+        border-style: solid;
+        background-color:#FFFFFF;
+    }
+
+    #lista{
+       /* padding: 0;*/
+        display:inline; 
+       
+    }
+
+    #lista li{
+
+        display: inline;
+        
+        
+
+    }
+
+    #lista li a{
+        /*Primero busca arial, despues hel.. etc.*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        text-decoration: none;
+        float: right;
+        padding: 10px;/*Borde interno*/
+        background-color:black;
+        color: white;
+        list-style-type: none;
+        border: 30px;
+    }
+    #lista li a:hover{
+        /*cuando pasa por el menu cambia de color.*/
+       background-color: white;
+       padding-bottom: 12px;
+       color:black; 
+    }
+
+    img{
+        height:200px;
+        width: 300px;
+
+    }
+
+    .header_div2{
+        /*alinea todos los contenedores.*/
+        display: inline-block; 
+
+
+
+    }
+
+    nav{
+      float: right;
+      
+     }
+
+     #header_principal{
+       top:0;
+       right: 0;
+       position: fixed;
+       background-color: black;
+       height:210px;
+       width: 100%;
+
+     }
+    
+     #div_lista{
+         float: right;
+         padding-top: 170px;
+     }
+
+     article{
+         border-color:black;
+         border-style: solid;
+         width: 600px;
+    }
+   
+     .header_div3{
+        /*alinea todos los contenedores.*/
+        display: inline-block;
+        background-color: coral;
+  
+     }
+
+     .header_div4{
+        /*alinea todos los contenedores.*/
+        vertical-align: middle;
+        padding-left: 5%;
+       
+     }

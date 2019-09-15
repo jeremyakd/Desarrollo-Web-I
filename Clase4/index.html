@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UBICAR index.css EN EL MISMO DIRECTORIO DE ESTE index.html y linkearlo con la siguiente etiqueta -->
+    <link rel="stylesheet" href="index.css">
+    <title>Página de prueba</title>
+</head>  
+
+<body>
+    <header id="header_principal">
+        
+        <div class="header_div">
+        
+        </div>
+        
+        
+        <div class="header_div2">
+          
+          <img src="webpage.jpg" alt="imagen de muestra" title="imagen de muestra" />
+
+        </div>
+
+             <div class="header_div2">   
+
+               <h1 id="hache_uno">Desarrollo Web 1</h1>
+               
+            </div>     
+
+             <div class="header_div2" id="div_lista"> 
+                  <nav>
+                   
+                    <ul id ='lista'>
+<!--                 PARA QUE FUNCIONEN LOS LINK HAY QUE CREAR index2.html, index3.html, index4.html Y UBICARLOS EN EL MISMO DIRECTORIO DE ESTE index.html -->
+                    <li><a href="index2.html" target="_blank">SEGUNDA PAGINA</a></li>
+                    <li><a href="index3.html" target="_blank">TERCERA PAGINA</a></li>
+                    <li><a href="index4.html" target="_blank">CUARTA PAGINA</a></li>
+                   </ul>
+                 </nav>
+             </div>
+
+    </header>
+    <br>
+    <h2>Hola Alumnos</h2>
+    <h3>Hola Alumnos</h3>
+    <h4>Hola Alumnos</h4>
+    <h5>Hola Alumnos</h5>
+    <h6>Hola Alumnos</h6>
+    <form action="" method="GET">
+        <p>
+            Nombre: <input type="text">
+        </p>
+        <p>
+            Apellido: <input type="text">
+        </p>
+        <p>
+            Fecha de nacimiento: <input type="date" name="date_control">
+        </p>
+    </form>
+  <div class="header_div4">  
+
+    <div class="header_div3">   
+    
+      <article>
+        <header>
+            <h2 style="margin-left: 20px">HEADER DEL VIDEO</h2>
+        </header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jckLNeZ-3XM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p> 
+            <strong> Lorem ipsum dolor </strong>
+            <br>
+            sit amet consectetur adipisicing elit. Qui adipisci doloremque voluptate, eos atque vel eaque, 
+            tempore aut, dicta veniam ea sed fugiat doloribus molestiae culpa laborum. 
+            <em>
+                 Omnis, porro aut.
+            </em> 
+        </p>
+
+       </article>
+    </div>
+    <div class="header_div3">  
+
+       <article>
+         <header>
+            <h2 style="margin-left: 20px">HEADER DEL VIDEO2</h2>
+        </header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2TIaExM33hE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p> 
+            <strong> Lorem ipsum dolor </strong>
+            <br>
+            sit amet consectetur adipisicing elit. Qui adipisci doloremque voluptate, eos atque vel eaque, 
+            tempore aut, dicta veniam ea sed fugiat doloribus molestiae culpa laborum. 
+            <em>
+                 Omnis, porro aut.
+            </em> 
+        </p>
+       </article>
+    </div>  
+  </div>   
+
+    <div id = "contenedor" class="contenedor_2">
+        <p id = "parrafo">Lorem ipsum, <br><strong> dolor sit amet consectetur adipisicing elit.<em> Possimus sed perferendis quidem consequatur vel quod laborum similique itaque. Porro, eius aliquam sunt voluptate culpa sapiente nemo architecto similique.</em> Quas, veniam.</strong></p>
+    </div>
+
+    
+    <script>
+
+        var ache = document.getElementById("hache_uno");
+        console.log(ache);
+        // está linea imprime en consola el contenido de la etiqueta cuyo id es "hache_uno"
+        console.log(ache.innerHTML);
+        
+
+    </script>
+
+    <footer>
+
+        <div>
+            <a href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+            <a href="https://www.twitter.com" target="_blank">TWITTER</a>
+            <a href="https://www.instagram.com" target="_blank">INSTA</a> 
+        </div>
+
+        <p>Este es el footer de nuestra pagina</p>
+        <address>
+            los patos 3080
+        </address>
+    </footer>
+
+</body>
+</html>
+
+
+<!-- la etiqueta em le da enfasis al contenido y es lo primero que busca los motores d busqueda, lleva uno solo
+los divs, contenedores de pueden agrupar y alinear y conjugar sus estilos.
+
+-->
