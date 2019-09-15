@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //crear 2 arrays 1 meses y otro dias
+    //pedir por funcion indice y retornas mes y cantidad de dias
+     
+    var meses =new Array('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+    var dias =new Array(31,28,31,30,31,31,30,31,30,31,30,31); 
+     
+    mostrarDias(meses,dias);   //llamado de funcion
+    gracias(); 
+    
+    function mostrarDias(m ,d){     //funcion con dos variables que son locales de funcion
+        num=parseInt(prompt("ingrese numero de mes por favor. "));
+        alert("el indice ingresado corresponde a "+m[num-1]+" y tiene"+d[num-1]+"dias"); //es num-1 ya que el indice del arreglo arranca en cero
+    }
+
+    function gracias(){
+        document.write("gracias por usar nuestro sofisticado software");
+    }
+
+
+
+
+
+
+
+    </script> 
+</body>
+</html>

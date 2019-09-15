@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //Array 1
+    var valoresAIngresar = new Array('Nombre: ','Apellido: ', 'Edad: ','Equipo de futbol: ','Lenguaje favorito: ');
+
+    //Array 2 vacio que mide la longitud de valoresAIngresar, lo obtenemos con valoresAIngresar.length
+    var usuario = new Array(valoresAIngresar.length);
+
+    // usuarioCompleto guarda usuario ya completo con sus datos
+    var usuarioCompleto = completarDatosDeUsuario(valoresAIngresar, usuario);
+
+    imprime(valoresAIngresar,usuarioCompleto);
+    //llamamos a la funcion imprimir y le pasamos el usuario completo y las datos para imprimirlos
+
+
+    function completarDatosDeUsuario(valores, user){
+        //Esta funcion llama a ingresoDeDatos() y le pasa como parametro el array con los datos a ingresar
+        
+        for (i = 0; i < valoresAIngresar.length; i++) {
+            //por cada iteracion del for llama a ingresoDeDatos() y le pasa como parametro el valor del array que se encuentra en i
+            
+            var dato = ingresoDeDatos(valores[i]);
+            //Guarda lo que devuelve en la variable dato
+            
+            user[i]=dato;
+            //le asigna el dato al indice
+            //en el caso que i vale cero guarda lo que pide valoresAIngresar[0] que seria el nombre
+        }
+        return user;
+        //la palabra reservada return devuelve algo en este caso el array user con los datos de nuestro usuario.
+    }
+
+
+
+    function ingresoDeDatos(d){
+
+        //cada vez que es llamada pide que se ingrese lo que recibe por parametro y lo guarda en datoDeUsuario
+        var datoDeUsuario = prompt("Por favor ingrese su " + d);
+
+        //lo devuelve para ser almacenado en la variable d de la funcion completarDatosDeUsuario()
+        return datoDeUsuario;
+    }
+
+
+
+    function imprime (datos,usuario){
+        //itera sobre los 2 arrays e imprime sus valores
+        for (let i = 0; i < datos.length; i++) {
+            document.write(datos[i] + usuario[i]);
+            document.write('<br>');
+            
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>
