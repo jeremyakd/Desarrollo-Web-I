@@ -76,12 +76,6 @@
 
 function ver()
 {
-    switch (document.getElementById('pass').type) {
-        case 'password': document.getElementById('pass').type = "text";
-        break;
-        case 'text': document.getElementById('pass').type = "password";
-        break;
-    } 
 
     if (document.getElementById('pass').type == "text")
         document.getElementById('pass').type = "password";
