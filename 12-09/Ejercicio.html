@@ -9,6 +9,8 @@
 <body>
     
 <script>
+
+    
     function imprime (datos,usuario){
         for (i = 0; i < datos.length; i++) {
             document.write(datos[i] + usuario[i]);
@@ -18,12 +20,12 @@
 
     var valoresAIngresar = new Array('Nombre: ','Apellido: ', 'Edad: ','Equipo de futbol: ','Lenguaje favorito: ');
     var usuario = new Array(valoresAIngresar.length);
-    var usuarioCompleto = completarDatosDeUsuario(valoresAIngresar, usuario);
+    var usuarioCompleto = completarDatosDeUsuario(valoresAIngresar,usuario);
 
     imprime(valoresAIngresar,usuarioCompleto);
 
     function completarDatosDeUsuario(valores, user){        
-        for (i = 0; i < valoresAIngresar.length; i++) {
+        for (i = 0; i < valores.length; i++) {
             var dato = ingresoDeDatos(valores[i]);
             user[i]=dato;
             }
