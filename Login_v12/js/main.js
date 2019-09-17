@@ -76,13 +76,10 @@
 
 function ver()
 {
-
-    if (document.getElementById('pass').type == "text")
+        if (document.getElementById('pass').type == "text")
         document.getElementById('pass').type = "password";
-    else if (document.getElementById('pass').type == "password") 
+        else if (document.getElementById('pass').type == "password") 
         document.getElementById('pass').type = "text";
-    
-
 }
 
 
