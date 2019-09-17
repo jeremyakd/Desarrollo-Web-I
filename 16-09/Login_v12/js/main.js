@@ -91,64 +91,8 @@ function ver (){
     }
 }
 
+// MEJORAR LA FUNCION CHECK PARA QUE DETECTE UN CARACTER ANTES QUE EL '@' UNO POSTERIOR Y UN PUNTO POSTERIOR
 
+// DESACTIVAR EL BOTON HASTA QUE SE HAYAN COMPLETADOS LOS 2 CAMPOS CORRECTAMENTE
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function validar(){
-
-    console.log("voy");
-}
-
-input.oninput = function() {
-    var valor = input.value;
-    ceck(valor);
-
-  };
-  
-function ceck(valor){
-
-    var arro =0;
-    var punto = 0;
-
-    if(valor.indexOf('@') !=-1){
-        arro++;
-    }
-    if(valor.indexOf('.') !=-1){
-        punto++;
-    }
-    if(arro==0 && punto==0){
-        mensaje.innerHTML = "Todavia te falta...";
-    }
-    else if( (arro==1 && punto==0) || (arro==0 && punto==1) ){
-        mensaje.innerHTML = "Casi... ";
-    }
-    else if(arro==1 && punto==1){
-        mensaje.innerHTML = "Perfecto";
-    }
-}
-
-function ver(){
-    var check = document.getElementById("checkbox1").checked;
-    if(check==true){
-        document.getElementById("pass").type = "text";
-    }else{
-        document.getElementById("pass").type = "password";
-    }
-} */
+// VALIDAR EL LOGIN CUANDO LE DEMOS AL BOTON, MOSTARLO COMO ALERT, (VALIDAR CONTRA UN ARRAY)
