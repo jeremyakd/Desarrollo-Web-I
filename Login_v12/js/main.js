@@ -89,22 +89,36 @@ input.oninput = function () {
 }
 
 function check(mail){
-    var arr=0;
+    var arrobaIngresado=0;
     var punto = 0;
+    // var arrobas = 1;
+    // var arrobasCantidad = mail.match(/@/g).length ;
+    // if (mail.match(/@/g).length = null) {
+    arrobasCantidad = 0;
+    // console.log(arrobasCantidad);
+    
 
     if(mail.indexOf('@') !=-1) {
-        arr++;
+        arrobaIngresado++;
     }
     if(mail.indexOf('.') !=-1) {
         punto++;
     }
-    if (arr==0 && punto == 0 ) {
+    if ((arrobaIngresado + punto + arrobasCantidad) == 1 ) {
         mensaje.innerHTML = "todavia te falta";
     }
-    else if ((arr == 1 && punto == 0 ) || (arr == 0 && punto == 1)){
+    else if ((arrobaIngresado + punto + arrobasCantidad) > 1 && (arrobaIngresado + punto + arrobasCantidad) < 3  && (arrobaIngresado + punto + arrobasCantidad) > 3 ){
         mensaje.innerHTML = "casi .... ";
     }
-    else if (arr == 1 && punto == 1) {
+    else if ((arrobaIngresado + punto + arrobasCantidad) == 2 ) {
         mensaje.innerHTML = "Perfecto";
     }
+    
+    console.log(arrobasCantidad);
 }
+
+// MEJORAR LA FUNCION CHECK PARA QUE DETECTE UN CARACTER ANTES QUE EL '@' UNO POSTERIOR Y UN PUNTO POSTERIOR
+
+// DESACTIVAR EL BOTON HASTA QUE SE HAYAN COMPLETADOS LOS 2 CAMPOS CORRECTAMENTE
+
+// VALIDAR EL LOGIN CUANDO LE DEMOS AL BOTON, MOSTARLO COMO ALERT, (VALIDAR CONTRA UN ARRAY)
