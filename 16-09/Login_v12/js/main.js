@@ -68,6 +68,7 @@ function check(str){
     var charPreArroba = false;
     var charPrePunto = false;
     var charPostPunto = false;
+    var emailOk = false;
     
     if (str==null){
         mensaje.innerHTML = 'Igrese mail por favor.';
@@ -93,14 +94,19 @@ function check(str){
         
     
 
-    if(arroba==1 && punto>0 && charPreArroba && charPrePunto && charPostPunto)
+    if(arroba==1 && punto>0 && charPreArroba && charPrePunto && charPostPunto){
         mensaje.innerHTML = 'OK';
-    else if (str.length==0)
+        emailOk=true;
+    }else if (str.length==0)
         mensaje.innerHTML = 'Escriba su mail';
     else 
         mensaje.innerHTML = 'Mail incorrecto';
-    
 
+    if((emailOk) && (document.getElementById("pass").value != '')) {
+        $('#boton_enviar').attr('disabled', false);
+    } else {
+        $('#boton_enviar').attr('disabled', true);
+    }    
 }
 
 function ver(){
@@ -111,7 +117,7 @@ function ver(){
     } else {
         document.getElementById('pass').type = "password";
     }
-
 }
-
-
+function probar(){
+    alert("funciona");
+}
