@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 contador=0
 
 for i in range(10):
@@ -24,3 +25,10 @@ for i in range(1,11):
     suma=suma+num
 
 print("la suma total es:", suma)
+=======
+# Confeccionar un programa que pida 10 numero & devuelva su suma.
+
+
+
+for i in range  (0,9)
+>>>>>>> 6e20df915d643a39e696342cc881e20de1f7cc29
