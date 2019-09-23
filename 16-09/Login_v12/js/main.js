@@ -61,6 +61,12 @@ input.oninput= () => {
     check(valor);
 }
 
+var emailOk = false;
+
+pass.oninput= () => {
+    verEstado(emailOk);
+}
+
 function check(str){
 
     var arroba=0;
@@ -68,7 +74,6 @@ function check(str){
     var charPreArroba = false;
     var charPrePunto = false;
     var charPostPunto = false;
-    var emailOk = false;
     
     if (str==null){
         mensaje.innerHTML = 'Igrese mail por favor.';
@@ -92,8 +97,6 @@ function check(str){
     if (str.length > str.lastIndexOf('.') + 1)
         charPostPunto=true; // . no puede estar en la ultima posicion
         
-    
-
     if(arroba==1 && punto>0 && charPreArroba && charPrePunto && charPostPunto){
         mensaje.innerHTML = 'OK';
         emailOk=true;
@@ -101,12 +104,14 @@ function check(str){
         mensaje.innerHTML = 'Escriba su mail';
     else 
         mensaje.innerHTML = 'Mail incorrecto';
+}
 
+function verEstado(emailOk){
     if((emailOk) && (document.getElementById("pass").value != '')) {
         $('#boton_enviar').attr('disabled', false);
     } else {
         $('#boton_enviar').attr('disabled', true);
-    }    
+    }   
 }
 
 function ver(){
