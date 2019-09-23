@@ -153,9 +153,10 @@ var alumnos = new Array(
         var encontro = false;
         var datoDelAlumno = document.getElementById("input").value;
         for (i = 0; i < alumnos.length; i++) {
-            console.log(alumnos[i]);
             if(alumnos[i] == datoDelAlumno){                
                 encontro = true;
+                document.getElementById("nombre").innerHTML = alumnos[i];
             }
         }
+        
     }
