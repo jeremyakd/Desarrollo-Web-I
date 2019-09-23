@@ -17,6 +17,8 @@ while condition:
         dia=False
     elif dia=='miercoles':
         print('in english is Wednesday')
+
+        
         break
         dia=False
     elif dia=='jueves':
