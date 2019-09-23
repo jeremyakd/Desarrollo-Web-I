@@ -121,6 +121,7 @@ function ver(){
 function probar(){
     alert("funciona");
 }
+
 var alumnos = new Array(
     'Sebastian Bogado',
     'Juan Acevedo',
@@ -142,3 +143,14 @@ var alumnos = new Array(
     'Rivas dueñas Mirella',
     'Vicente Gaston muñoz',
     'Gabriela Ramos')
+
+    function verAlumno(){
+        var encontro = false;
+        var datoDelAlumno = document.getElementById("input").value;
+        for (i = 0; i < alumnos.length; i++) {
+            console.log(alumnos[i]);
+            if(alumnos[i] == datoDelAlumno){                
+                encontro = true;
+            }
+        }
+    }
