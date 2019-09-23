@@ -15,14 +15,13 @@
                 check=false;
             }
         }
-
         return check;
     });
 
 
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
-           hideValidate(this);
+            hideValidate(this);
         });
     });
 
@@ -56,44 +55,90 @@
 })(jQuery);
 
 
-input.oninput = function() {
-    var valor = input.value;
+input.oninput= () => {
+    var valor = input.value.trim(); //trim elimina los espacios al principio y final del str
+    valor = document.getElementById('input').value;
     check(valor);
-};
+}
 
-  function check(mail){
-    var arr = 0;
-    var punto = 0;
+var emailOk = false;
 
-    if(mail.indexOf('@') != -1){
-        arr++;
-    }
-    if(mail.indexOf('.') != -1){
-        punto++;
-    }
-    if(arr==0 && punto==0){
-        mensaje.innerHTML = 'Todavia te falta . . . ';
-    }
-    else if ( (arr==1 && punto ==0) || (arr==0 && punto ==1)  ){
-        mensaje.innerHTML = 'Casi . . . ';
-    }  
-    else if (arr==1 && punto==1){
-        mensaje.innerHTML = 'Perfecto . . . .';
-    }
-  }
+pass.oninput= () => {
+    verEstado(emailOk);
+}
 
-function ver (){
-    var check = document.getElementById("checkbox1").checked;
-    if (check){
-        document.getElementById("pass").type = "text";
-    }else{
-        document.getElementById("pass").type = "password";
+function check(str){
+
+    var arroba=0;
+    var punto=0;
+    var charPreArroba = false;
+    var charPrePunto = false;
+    var charPostPunto = false;
+    
+    if (str==null){
+        mensaje.innerHTML = 'Igrese mail por favor.';
     }
+
+    for (l=0; l<str.length; l++){
+        var $char=str.charAt(l);
+
+        if ($char=='@')
+            arroba++;
+        else if ($char=='.')
+            punto++;
+    }
+
+    if (str.indexOf('@') > 0)
+        charPreArroba=true; // @ no puede estar en la posicion 0
+
+    if (str.lastIndexOf('.') - str.indexOf('@') > 1)
+        charPrePunto=true; // el punto precede al @ y ademas tiene q haber 1 o + char en medio
+
+    if (str.length > str.lastIndexOf('.') + 1)
+        charPostPunto=true; // . no puede estar en la ultima posicion
+        
+    if(arroba==1 && punto>0 && charPreArroba && charPrePunto && charPostPunto){
+        mensaje.innerHTML = 'OK';
+        emailOk=true;
+    }else if (str.length==0)
+        mensaje.innerHTML = 'Escriba su mail';
+    else 
+        mensaje.innerHTML = 'Mail incorrecto';
 }
 
 
 // MEJORAR LA FUNCION CHECK PARA QUE DETECTE UN CARACTER ANTES QUE EL '@' UNO POSTERIOR Y UN PUNTO POSTERIOR
 
-// DESACTIVAR EL BOTON HASTA QUE SE HAYAN COMPLETADOS LOS 2 CAMPOS CORRECTAMENTE
+function ver(){
+    var check = document.getElementById('checkbox1').checked;
 
-// VALIDAR EL LOGIN CUANDO LE DEMOS AL BOTON, MOSTARLO COMO ALERT, (VALIDAR CONTRA UN ARRAY)
+    if(check){
+        document.getElementById('pass').type = "text";
+    } else {
+        document.getElementById('pass').type = "password";
+    }
+}
+function probar(){
+    alert("funciona");
+}
+var alumnos = new Array(
+    'Sebastian Bogado',
+    'Juan Acevedo',
+    'Daniel Sánchez',
+    'Ivan Angel Medina',
+    'Edgardo Sebastian Balmaceda',
+    'Gutierrez Diego',
+    'Emliano Mazzurque',
+    'Nicolas Mamone',
+    'Renato Alor',
+    'Diego Benitez',
+    'Matias Gomez',
+    'Celia Huamani',
+    'Ever Ruiz Diaz',
+    'Daniel Delfino',
+    'Ezequiel Pereira',
+    'Ezequiel Voly Blumenfeld',
+    'Mayerlin Alexandra Velasquez',
+    'Rivas dueñas Mirella',
+    'Vicente Gaston muñoz',
+    'Gabriela Ramos')
