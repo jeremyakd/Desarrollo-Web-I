@@ -126,3 +126,24 @@ function ver(){
 function probar(){
     alert("funciona");
 }
+var alumnos = new Array(
+    'Sebastian Bogado',
+    'Juan Acevedo',
+    'Daniel Sánchez',
+    'Ivan Angel Medina',
+    'Edgardo Sebastian Balmaceda',
+    'Gutierrez Diego',
+    'Emliano Mazzurque',
+    'Nicolas Mamone',
+    'Renato Alor',
+    'Diego Benitez',
+    'Matias Gomez',
+    'Celia Huamani',
+    'Ever Ruiz Diaz',
+    'Daniel Delfino',
+    'Ezequiel Pereira',
+    'Ezequiel Voly Blumenfeld',
+    'Mayerlin Alexandra Velasquez',
+    'Rivas dueñas Mirella',
+    'Vicente Gaston muñoz',
+    'Gabriela Ramos')
