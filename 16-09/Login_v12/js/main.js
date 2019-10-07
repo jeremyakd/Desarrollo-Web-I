@@ -156,6 +156,8 @@ var alumnos = new Array(
             if(alumnos[i] == datoDelAlumno){                
                 encontro = true;
                 document.getElementById("nombre").innerHTML = alumnos[i];
+                /* innerHTML es para ingresar en el elemento */
+
             }
         }
         

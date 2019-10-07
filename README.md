@@ -31,4 +31,5 @@ branch - rama del repo master
     --------------------ATAJO --------------------
     git commit -m "Aca va nuestro mensaje para el commit"
     git diff ------ Nos muestra los cambios
-    git push origin:<nombre-branch> ------ Manda los cambios comiteados al branch
+    git push origin:<nombre-branch> ------ Manda los cambios comiteados al branch BATMAN
+
