@@ -1,2 +1,0 @@
-Este frontend es una versión adaptada del tema "Start Bootstrap Clean Blog"
-https://github.com/BlackrockDigital/startbootstrap-clean-blog
