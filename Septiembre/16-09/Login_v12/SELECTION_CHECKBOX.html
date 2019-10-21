@@ -1,0 +1,83 @@
+<!-- 
+  
+EJEMPLO DE CHECKBOX  
+  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function contarSeleccionados(){
+  var cant=0;
+  if (document.getElementById('checkbox1').checked){
+    cant++;
+  }
+  if (document.getElementById('checkbox2').checked){
+    cant++;
+  }
+  if (document.getElementById('checkbox3').checked){
+    cant++;
+  }
+  if (document.getElementById('checkbox4').checked){
+    cant++;
+  }
+  alert('Conoce ' + cant + ' lenguajes');
+}
+</script>
+
+<form>
+  <input type="checkbox" id="checkbox1">JavaScript
+  <br>
+  <input type="checkbox" id="checkbox2">PHP
+  <br>
+  <input type="checkbox" id="checkbox3">JSP
+  <br>
+  <input type="checkbox" id="checkbox4">VB.Net
+  <br>
+  <input type="button" value="Mostrar" onClick="contarSeleccionados()">
+</form>
+</body>
+</html> 
+------------------------------------------------------------------------------------
+
+EJEMPLO DE SELECTION OPTIONS 
+
+↓↓↓↓↓↓↓↓↓↓↓↓
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+function cambiarColor()
+{
+  var seleccion=document.getElementById('select1');
+  document.getElementById('text1').value=seleccion.selectedIndex;
+  document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+  document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+}
+</script>
+
+<form>
+  <select id="select1" onChange="cambiarColor()">
+    <option value="ff0000">Rojo</option>
+    <option value="00ff00">Verde</option>
+    <option value="0000ff">Azul</option>
+  </select>
+  <br>
+  Número de índice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
+  Texto seleccionado:<input type="text" id="text2"><br>
+  Valor asociado:<input type="text" id="text3"><br>
+</form>
+</body>
+</html>
