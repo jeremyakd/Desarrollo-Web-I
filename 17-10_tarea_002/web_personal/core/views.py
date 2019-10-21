@@ -21,3 +21,4 @@ def portfolio(request):
 
 def contact(request):
     return HttpResponse(html_response + "<h1> Contacto </h1> <h2> Asesoría </h2> <b>Teléfono:</b> número (+54 11) <p> <b>Honorarios:</b> precio (U$S)")
+   
