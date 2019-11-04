@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Web Personal | {% block title %} {% endblock %}</title>
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href='{% url "home" %}'>PORTADA</a></li>
+                <li><a href='{% url "about" %}'>ACERCA DE</a></li>
+                <li><a href='{% url "portfolio" %}'>PORTAFOLIO</a></li>
+                <li><a href='{% url "contact" %}'>CONTACTO</a></li>
+            </ul>
+        </nav>
+        
+        {% block header %} {% endblock %}
+    
+    </header>
+
+    <main>
+        
+        <article>
+            
+            {% block content %} {% endblock %}
+        
+        </article>
+    
+    </main>
+    
+    <footer>
+        
+        <p>Copyright &copy; {% now 'Y' %} · I have nothing</p>
+    
+    </footer>
+
+</body>
+
+</html>
