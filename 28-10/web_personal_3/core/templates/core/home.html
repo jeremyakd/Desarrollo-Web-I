@@ -1,9 +1,13 @@
 {% extends 'core/base.html' %}
 
+{% load static %}
+
 {% block title %}Home{% endblock %}
 
-{% block content %}
-<h2>PORTADA</h2>
-<p> Esto es la portada</p>
+{% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Jeremias Caceres</h1>
+    <span class="subheading">Desarrollador de Software & Profesor de desarrollo web</span>
 {% endblock %}
 
