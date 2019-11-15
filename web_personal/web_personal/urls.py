@@ -1,4 +1,4 @@
-"""web_personal_3 URL Configuration
+"""web_personal URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from core import views as core_views
 from portfolio import views as portfolio_views
+from django.conf import settings
 
 urlpatterns = [    
     path('', core_views.home, name='home'),
@@ -26,3 +27,7 @@ urlpatterns = [
     path('contact/',core_views.contact ,name='contact'),
     path('admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
